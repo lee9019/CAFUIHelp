@@ -1,0 +1,231 @@
+/*
+ * Entry point of global application style.
+ * Component-specific style should not go here and be included directly as part of the components.
+ */
+
+// Theme variables, must be included before the libraries to allow overriding defaults
+@import url("https://cafstorageaccount.z30.web.core.windows.net/assets/theme/theme-variables.scss");
+
+// 3rd party libraries
+
+// Theme customization
+@import url("https://cafstorageaccount.z30.web.core.windows.net/assets/theme/theme.scss");
+@import url("https://cafstorageaccount.z30.web.core.windows.net/assets/Primeng/primeng.min.css");
+@import url("https://cafstorageaccount.z30.web.core.windows.net/assets/Primeng/theme.css");
+@import url("https://cafstorageaccount.z30.web.core.windows.net/assets/primeicons/primeicons.css");
+
+
+.page-container {
+  background: #e6e6e6 !important;
+}
+
+body  {
+  background: #e6e6e6 !important;
+  font-family: Nunito;
+}
+
+.no-scroll,
+body,
+.full-page,
+.page-container {
+  overflow-x: hidden;
+  overflow-y: inherit !important;
+}
+
+* {
+  //font-family: Nunito;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+se-widget {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.sendBtn {
+  margin-left: 30%;
+  padding: 5px;
+}
+
+.no-left-padding {
+  padding-left: 0px !important;
+}
+
+.no-right-padding {
+  padding-right: 0px !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.loading-icon {
+  height: 35px;
+  padding-right: 10px;
+  vertical-align: middle;
+  padding-bottom: 0px;
+  padding-left: 70px;
+}
+
+.widget-chart {
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 17rem;
+  padding-top: 15px;
+  background-color: #f7f7f7;
+}
+
+.no-wrap-legend {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+.widget-legend-bar {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari */
+  transform: rotate(45deg);
+  /* Standard syntax */
+}
+
+.widget-legend-range {
+  width: 40px;
+  height: 19px;
+  background-color: #505559;
+  margin-left: 8px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 2px;
+  margin-left: 0px;
+  margin-right: 5px;
+  float: left;
+}
+
+.widget-legend-square {
+  width: 16px;
+  height: 19px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 2px;
+  margin-left: 0px;
+  margin-right: 5px;
+  float: left;
+}
+
+.widget-legend-range-left {
+  width: 0px;
+  height: 19px;
+  border-top: 10px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 8px solid;
+  float: left;
+}
+.no-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+.tooltip-customer {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+}
+.chart-legend {
+  padding-top: 31px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.donutContainer {
+  min-height: 150px;
+}
+
+.linechart-legends {
+  color: #333;
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+}
+
+.linechart-legends {
+  position: relative;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 5px;
+    position: absolute; //left: 16px;
+    top: 6px;
+  }
+  &.datasheet::before {
+    background: transparent;
+    border-top: 2px dotted #2574a9;
+    border-bottom: 2px dotted #f9bf3b;
+    height: 8px;
+  }
+  &.currentcurve::before {
+    background: transparent;
+    border-top: 2px solid #2574a9;
+    border-bottom: 2px solid #f9bf3b;
+    height: 8px;
+  }
+}
+.highcharts-credits {
+  display: none;
+}
+
+leaflet-map-cluster {
+  height: 100%;
+}
+
+.marker-redcluster {
+  background-color: rgba(226, 151, 140, 0.6);
+}
+
+.marker-redcluster div {
+  background-color: rgba(226, 151, 140, 1);
+}
+
+.marker-orangecluster {
+  background-color: rgba(226, 170, 140, 0.6);
+}
+
+.marker-orangecluster div {
+  background-color: rgba(226, 170, 140, 1);
+}
+
+.marker-greencluster {
+  background-color: rgba(181, 226, 140, 0.6);
+}
+
+.marker-greencluster div {
+  background-color: rgba(181, 226, 140, 1);
+}
+
+.marker-bluecluster {
+  background-color: rgba(140, 178, 226, 0.6);
+}
+
+.marker-bluecluster div {
+  background-color: rgba(140, 178, 226, 1);
+}

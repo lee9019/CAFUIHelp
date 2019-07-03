@@ -1,0 +1,41 @@
+<div class="xheader">
+  <div class="headerStyles">
+    
+    <app-notificationbox [alarmCount]='alarmCount' [warningCount]='warnCount'></app-notificationbox>
+    <div class="rightSection">
+      <img class="se-logo" src={{headerConfiguration.companyLogoImg}} tourAnchor="selogo" />
+      <ul class="headerNav">
+        <!--<li ngbDropdown *ngIf='headerConfiguration.isSettingsRequired' class="headerli">
+          <a class="dropdown-toggle" ngbDropdownToggle id="settingsDropdown">
+            <img class="icon locale" src='{{appConstant.images}}machine-advisor.png' />{{ 'settings' | translate }}
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu languageDropdown" ngbDropdownMenu aria-labelledby="settingsDropdown">
+            <li>
+              <a>dummy</a>
+            </li>
+          </ul>
+        </li>-->
+        <li ngbDropdown *ngIf='headerConfiguration.supportedLanguages.length>1' class="headerli">
+          <a class="dropdown-toggle" ngbDropdownToggle>
+            <img class="icon locale" src='{{appConstant.images}}countrySelection.svg' />
+            {{selectedLanguage}}
+            <span class="caret"></span>
+          </a>
+         
+        </li>
+        <li ngbDropdown class="headerli">
+      
+
+          <a *ngIf="isLoggedIn" class="dropdown-toggle" ngbDropdownToggle id="loginDropdown">
+            <img class="icon login" src='{{appConstant.images}}profile.svg' />
+            {{loggedInUser || user.email || 'IDMS user'}}
+            <span class="caret"></span>
+          </a>
+         
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

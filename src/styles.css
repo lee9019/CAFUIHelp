@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.code {
+    background-color: #4F4F4F;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    height: 103px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.codeTS{
+    background-color: #4F4F4F;
+    display: block;
+    padding: 15px;
+    color: #fff;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+
+}
+.pageHeader{
+    font-weight: 700;
+}
+.bar{
+    padding: 5px 30px;
+    background-color: #32AD3C;
+    height: 40px;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+
+  <app-header></app-header>
+ <div class="bar"><h4 style="color: white">Resources</h4></div>
+  <div class="row no-left-padding no-right-padding;">
+    <se-widget class="col-md-3"
+      style="width:15%;min-width:230px; color:#f4f4f4;margin-top:21px">
+      <app-menu-web [itemsConfig]="itemData" class="no-left-padding no-right-padding"></app-menu-web>
+    </se-widget>
+    <se-widget class="col-md-9" style="height: 100%;width:85%; overflow-y: scroll;">
+      <router-outlet></router-outlet>
+    </se-widget>
+  </div>
